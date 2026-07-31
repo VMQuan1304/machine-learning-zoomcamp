@@ -1,7 +1,15 @@
 import requests
+import google.auth.transport.requests
+import google.oauth2.id_token
+import os
 
-url = 'http://localhost:9696/predict'
-url = 'https://holy-mountain-8999.fly.dev/predict'
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"D:/github/machine-learning-zoomcamp/00-practice/05-deploymodel/data-470504-f8d51730d6df.json"
+# url = 'http://localhost:9696/predict'
+# url = 'https://holy-mountain-8999.fly.dev/predict'
+url = 'https://churn-prediction-62791570809.asia-southeast3.run.app'
+
+auth_req = google.auth.transport.requests.Request()
+token = google.oauth2.id_token.fetch_id_token(auth_req, url)
 
 customer = {
     "gender": "male",
@@ -26,7 +34,11 @@ customer = {
     # "whatever": 22
 }
 
-response = requests.post(url, json=customer)
+response = requests.post(
+    f'{url}/predict',
+    json=customer,
+    headers={"Authorization": f"Bearer {token}"}
+)
 print('response', response.json())
 churn = response.json()['churn']
 
