@@ -1,0 +1,30 @@
+# flyctl launch added from .venv/.gitignore
+.venv/**/*
+
+# flyctl launch added from .venv/Lib/site-packages/debugpy/_vendored/pydevd/_pydevd_frame_eval/.gitignore
+.venv/Lib/site-packages/debugpy/_vendored/pydevd/_pydevd_frame_eval/pydevd_frame_evaluator.*.so
+.venv/Lib/site-packages/debugpy/_vendored/pydevd/_pydevd_frame_eval/pydevd_frame_evaluator.*.pyd
+.venv/Lib/site-packages/debugpy/_vendored/pydevd/_pydevd_frame_eval/pydevd_frame_evaluator.pyx
+
+# flyctl launch added from .venv/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/.gitignore
+.venv/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/attach_x86.dylib
+.venv/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/attach_x86_64.dylib
+.venv/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/attach_linux_x86.o
+.venv/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/attach_linux_x86_64.o
+
+# flyctl launch added from .venv/Lib/site-packages/jupyterlab_widgets/.gitignore
+.venv/Lib/site-packages/jupyterlab_widgets/**/*.suo
+.venv/Lib/site-packages/jupyterlab_widgets/**/*.user
+.venv/Lib/site-packages/jupyterlab_widgets/**/.DS_Store
+.venv/Lib/site-packages/jupyterlab_widgets/**/node_modules
+.venv/Lib/site-packages/jupyterlab_widgets/**/typings/tsd.d.ts
+.venv/Lib/site-packages/jupyterlab_widgets/**/npm-debug.log
+.venv/Lib/site-packages/jupyterlab_widgets/**/test/build
+.venv/Lib/site-packages/jupyterlab_widgets/**/test/coverage
+.venv/Lib/site-packages/jupyterlab_widgets/**/lib
+.venv/Lib/site-packages/jupyterlab_widgets/**/dist
+.venv/Lib/site-packages/jupyterlab_widgets/**/build
+.venv/Lib/site-packages/jupyterlab_widgets/**/docs
+.venv/Lib/site-packages/jupyterlab_widgets/**/example/*.js
+.venv/Lib/site-packages/jupyterlab_widgets/**/static
+fly.toml
