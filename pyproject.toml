@@ -27,3 +27,8 @@ dependencies = [
 dev = [
     "requests>=2.34.2",
 ]
+
+[tool.uv.workspace]
+members = [
+    "00-practice/09b-cloudfunc",
+]
